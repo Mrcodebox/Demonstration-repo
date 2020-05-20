@@ -1,0 +1,126 @@
+h1 {
+    color: rgb(44, 8, 143);
+    text-align: center;
+}
+
+.title {
+    color: rgb(68, 42, 7);
+}
+#italic{
+    color: orange;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(34, 107, 156);
+    margin: 10px 10px;
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation{ 
+    0%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+
+}
+
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, purple, orange, yellow, pink, purple);
+}
+@keyframes getBigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(.5);}
+
+}
+
+#box3 {
+   animation: getBigger infinite 8s ease-in; 
+   border-radius: 50%;
+   background: orange;
+}
+@keyframes changeColors {
+    0% {background-color: gray ;}
+    25% {background-color: purple ;}
+    50% {background-color:  yellow ;}
+    75% {background-color: pink ;}
+    100% {background-color: gray ;}
+}
+#box4 {
+    animation: changeColors 7s infinite;
+}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+     50% {left: 100px; top: 200px;}
+     75% {left: 0px; top: 200px;}
+     100% {left: 0px; top: 0px;}
+
+}
+#box5 {
+    position: relative;
+    background: red ;
+    animation: moveBox 5s 3s;
+}
+
+#box6 {
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+/* html {
+    background-image: linear-gradient(to right,blue,green,red);
+} */
+
+nav {
+    background-color: aquamarine ;
+    text-align: center;
+}
+
+.nav-wrapper {
+    background-color: blue ;
+    text-align: center;
+}
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.flex {
+   border: 3px solid black;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 100px;
+}
